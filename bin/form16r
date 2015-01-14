@@ -6,4 +6,4 @@ library_path = Pathname.new(File.dirname(__FILE__)).join('..', "lib")
 $:.push(library_path)
 
 require "form16r"
-Form16r::Parser.new(file: $1)
+Form16r::Parser.parse(file: ARGV[0])
